@@ -28,7 +28,7 @@ public class BlockGame {
 		blocks.add(new Block(4, 2, 2));
 		blocks.add(new Block(2, 2, 2));
 
-		Block srcBlock = new Block(6, 4, 2);
+		Block srcBlock = new Block(6, 6, 2);
 		//
 		// Block mainBlock = new Block();
 		//
