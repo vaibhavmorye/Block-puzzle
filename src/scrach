@@ -1,0 +1,38 @@
+	BlockV2 findSmallX(BlockV2 srcBlock, BlockV2 search, BlockV2 mainBlock, HashSet<BlockV2> blocks)
+	{
+		double x = 0, y = 0 , z = 0;
+		
+		x =  srcBlock.x;
+		y =  srcBlock.y;
+		d =  srcBlock.d;
+		
+		Block toFind = new Block();
+		toFind.x = x-d/2;
+		toFind.y = y;
+		toFind.d = d/2;
+		
+		if (toFind.x >= mainBlock.x) {
+			if (blocks.contain(toFind)){
+				for(Block b: blocks){
+					if (b.x == toFind.x && b.y == toFind.y){
+						if (b.d == toFind.d){
+							return toFind;
+							}
+						else if (toFind.x == mainBlock.x){}
+						else {
+							toFind.x = x;
+							findSmallX(srcBlock,  search,  mainBlock,  blocks);
+						}
+					}
+				}
+			}else(if ()){
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
